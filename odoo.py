@@ -12,7 +12,7 @@
 # The rest of subcommands are defined in odoo/cli or in <module>/cli by
 # subclassing the Command object
 #
-#----------------------------------------------------------
+#Ricardo_1----------------------------------------------------------
 import os
 import re
 import sys
