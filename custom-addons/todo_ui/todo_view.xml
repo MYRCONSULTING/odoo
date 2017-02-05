@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+	<openerp>
+		<data>
+			<act_window 
+				id="action_todo_stage"
+				name="To-Do Task Stages"
+				res_model="todo.task.stage"
+				view_mode="tree,form"/>
+			
+			
+			
+			<act_window
+				id="action_todo_task_stage"
+				name="To-Do Task Stages"
+				res_model="todo.task.stage"
+				src_model="todo.task"
+				multi="False"/>
+		</data>
+	</openerp>

@@ -9,11 +9,10 @@
 {
     'name': 'User interface improvements to the To-Do app',
     'author' : 'Megatienda',
-    'depends' : ['todo_app'],
     'category' : 'MegaTienda',
     'application' : True,
     'website': 'http://www.megatienda.com.pe',
-    'data': [
-        
-    ]
+    'depends' : ['todo_app'],
+    
+    
 }
