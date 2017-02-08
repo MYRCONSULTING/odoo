@@ -3,6 +3,7 @@ from openerp import models, fields, api
 from openerp.exceptions import ValidationError
 
 
+
 class Tag(models.Model):
     _name = 'todo.task.tag'
     name = fields.Char('Name', size=40, translate=True)
@@ -50,6 +51,8 @@ class TodoTask(models.Model):
     tag_ids = fields.Many2many('todo.task.tag', string='Tags')
     refers_to = fields.Reference([('res.user', 'User'),('res.partner', 'Partner')], 'Refers to')
     stage_state = fields.Selection(related='stage_id.state', string='Stage State')
+    effort_estimate = fields.Integer('Effort Estimate')
+    user_todo_count  = fields.Integer('User Count')
     
     _sql_constraints = [
         ('todo_task_name_uniq',
@@ -80,5 +83,10 @@ class TodoTask(models.Model):
     def _check_name_size(self):
         if len(self.name) < 5:
              raise ValidationError('Must have 5 chars!')
+    
+    @api.one 
+    def compute_user_todo_count(self):
+        self.user_todo_count = self.search_count([('user_id', '=', self.user_id.id)])
+        user_todo_count = fields.Integer('User To-Do   Count', compute='compute_user_todo_count')
     
     

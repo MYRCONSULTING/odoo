@@ -12,7 +12,8 @@
     'category' : 'MegaTienda',
     'application' : True,
     'website': 'http://www.megatienda.com.pe',
-    'depends' : ['todo_app'],
+    'depends': ['todo_user'],
+    'data': ['todo_view.xml']
     
     
 }
