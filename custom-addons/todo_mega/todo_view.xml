@@ -6,9 +6,9 @@
 			    <field name="model">survey.survey</field>
 			    <field name="inherit_id" ref="survey.survey_form"/>
 			    <field name="arch" type="xml">
-			     <xpath expr="//page[@string='Select Options']" position="after">
-			        <page string="My_New_Tab">
-			            <field name="product_ids" string="Productos" />
+			     <xpath expr="//page[@string='Edit Pages and Questions']" position="before">
+			        <page string="Productos">
+			            <field name="x_product_ids" string="Productos" />
 			        </page>
 			    </xpath>
 			    </field>

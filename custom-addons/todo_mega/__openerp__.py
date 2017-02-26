@@ -21,11 +21,14 @@
 {
     'name' : 'To-Do Mega',
     'author' : 'Megatienda',
-    'depends' : ['mail'],
+    'depends' : ['project','survey'],
     'category' : 'MegaTienda',
     'application' : True,
     'website': 'http://www.megatienda.com.pe',
     'data': [
         'todo_view.xml'
     ],
+    'installable'    :   True,
+    'auto_install'  :   True,
+    'active'    :   True
 }
