@@ -8,6 +8,8 @@
 			    <field name="arch" type="xml">
 			     	<field name="categ_ids" position="after">
 			            <field name="x_survey_id" string="Encuesta" />
+			            <newline/>
+			            <field name="x_survey_user_input_id" string="Respuesta"/>
 			        </field>
 			    </field>
 			</record>
