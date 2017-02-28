@@ -6,13 +6,16 @@ class SurveySurvey(models.Model):
     x_product_ids = fields.Many2many('product.product',
                                          string='Survey')
     
-
-class SurveyUserInput(models.Model):
-    _inherit = ['survey.user_input']
-    x_product_ids = fields.Many2one('product.product')
-    
-
 class ProjectProject(models.Model):
     _inherit = ['project.project']
     x_survey_id = fields.Many2one('survey.survey',string='Encuesta')
+    
+class ProjectTask(models.Model):
+    _inherit = ['project.task']
+    x_survey_id = fields.Many2one('survey.survey',string='Encuesta')
+    
+class SurveyUserInput(models.Model):
+    _inherit = ['survey.user_input']
+    x_product_ids = fields.Many2one('product.product')
+    x_project_task_ids = fields.Many2one('project.task')
     

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <openerp>
+        <data>
+            <record id="view_form_project_task_inherited" model="ir.ui.view">
+			    <field name="name">Project Task form – User extension</field>
+			    <field name="model">project.task</field>
+			    <field name="inherit_id" ref="project.view_task_form2"/>
+			    <field name="arch" type="xml">
+			     	<field name="categ_ids" position="after">
+			            <field name="x_survey_id" string="Encuesta" />
+			        </field>
+			    </field>
+			</record>
+			
+		</data>
+		
+    </openerp>

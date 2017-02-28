@@ -8,6 +8,10 @@
 			    <field name="arch" type="xml">
 			     	<field name="survey_id" position="after">
 			            <field name="x_product_ids" string="Producto" />
+			            <newline/>
+			            <!-- --> 
+			            <field name="x_project_task_ids" string="Tarea" />
+			             
 			        </field>
 			    </field>
 			</record>

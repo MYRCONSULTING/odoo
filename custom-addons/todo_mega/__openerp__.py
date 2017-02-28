@@ -27,8 +27,9 @@
     'website': 'http://www.megatienda.com.pe',
     'data': [
         'todo_view_survey.xml',
-        'todo_view_survey_user_input.xml',
-        'todo_view_project_project.xml'
+        'todo_view_project_project.xml',
+        'todo_view_project_task.xml',
+        'todo_view_survey_user_input.xml'
     ],
     'installable'    :   True,
     'auto_install'  :   True,
