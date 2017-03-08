@@ -21,7 +21,7 @@
 {
     'name' : 'To-Do Mega',
     'author' : 'Megatienda',
-    'depends' : ['project','survey'],
+    'depends' : ['project','survey','contacts'],
     'category' : 'MegaTienda',
     'application' : True,
     'website': 'http://www.megatienda.com.pe',
