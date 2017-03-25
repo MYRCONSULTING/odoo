@@ -6,7 +6,8 @@
 			    <field name="model">survey.survey</field>
 			    <field name="inherit_id" ref="survey.survey_form"/>
 			    <field name="arch" type="xml">
-			     <xpath expr="//page[@string='Edit Pages and Questions']" position="before">
+			     <!-- xpath expr="//page[@string='Edit Pages and Questions']" position="before"-->
+			     <xpath expr="//page[1]" position="after">
 			        <page string="Productos">
 			            <field name="x_product_ids" string="Productos" />
 			        </page>
