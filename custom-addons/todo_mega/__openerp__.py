@@ -30,7 +30,8 @@
         'todo_view_project_project.xml',
         'todo_view_project_task.xml',
         'todo_view_survey_user_input.xml',
-        'security/todo_access_rules.xml'
+        'security/todo_access_rules.xml',
+        'data/project_task_type.xml'
     ],
     'installable'    :   True,
     'auto_install'  :   True,
