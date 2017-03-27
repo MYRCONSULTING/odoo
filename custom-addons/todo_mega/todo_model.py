@@ -20,3 +20,15 @@ class SurveyUserInput(models.Model):
     x_product_ids = fields.Many2one('product.product')
     x_project_task_ids = fields.Many2one('project.task')
     
+
+class ProjectTaskType(models.Model):
+    _inherit = ['project.task.type']
+    x_task_type = fields.Selection([
+        ('0','IN PREPARATION'),
+        ('1','PENDING'),
+        ('2','ON FIELD'),
+        ('3','RETURNED FROM FIELD'),
+        ('4','CANCEL'),
+        ('5','OTHER')],
+        'Priority',default='5')
+    
