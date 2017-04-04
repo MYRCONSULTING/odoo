@@ -10,6 +10,7 @@
 			            <field name="x_survey_id" string="Encuesta" />
 			            <newline/>
 			            <field name="x_survey_user_input_id" string="Respuesta"/>
+			            <field name="x_recursive" string="Recrear tarea despues de finalizar"/>
 			        </field>
 			    </field>
 			</record>

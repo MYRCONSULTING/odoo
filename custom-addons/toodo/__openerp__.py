@@ -19,12 +19,12 @@
 #
 ##############################################################################
 {
-    'name' : 'To-Do Mega',
-    'author' : 'Megatienda',
-    'depends' : ['project','survey','contacts','purchase','project_task_code'],
-    'category' : 'MegaTienda',
+    'name' : 'todoo',
+    'author' : 'MYR Consultoria en Sistemas SAC',
+    'depends' : ['project','survey','contacts','project_task_code'],
+    'category' : 'Project',
     'application' : True,
-    'website': 'http://www.megatienda.com.pe',
+    'website': 'http://www.myrconsulting.net',
     'data': [
         'todo_view_survey.xml',
         'todo_view_project_project.xml',
