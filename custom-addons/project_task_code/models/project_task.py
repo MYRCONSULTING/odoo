@@ -10,7 +10,7 @@ class ProjectTask(models.Model):
     _inherit = 'project.task'
 
     code = fields.Char(
-        string='Task Number', required=True, default="/", readonly=True)
+        string='Task Number', required=False, default="/", readonly=True)
     
     name = fields.Char(
         string='name', required=False, default=" ", readonly=False)

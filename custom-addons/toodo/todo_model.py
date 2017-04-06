@@ -15,6 +15,7 @@ class ProjectTask(models.Model):
     x_survey_id = fields.Many2one('survey.survey',string='Encuesta')
     x_survey_user_input_id = fields.Many2one('survey.user_input',string='Respuesta')
     x_recursive = fields.Boolean('Recursive?')
+    x_create_source = fields.Boolean('Create Source ?')
     
 class SurveyUserInput(models.Model):
     _inherit = ['survey.user_input']

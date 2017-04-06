@@ -9,6 +9,7 @@
             <field name="name">Task code</field>
             <field name="code">project.task</field>
             <field eval="8" name="padding" />
+            <field eval="1" name="number_next_actual" />
             <field name="prefix">T</field>
         </record>
     </data>

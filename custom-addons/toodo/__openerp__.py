@@ -21,7 +21,7 @@
 {
     'name' : 'todoo',
     'author' : 'MYR Consultoria en Sistemas SAC',
-    'depends' : ['project','survey','contacts','project_task_code'],
+    'depends' : ['project','survey','contacts','project_task_code','base_action_rule'],
     'category' : 'Project',
     'application' : True,
     'website': 'http://www.myrconsulting.net',
@@ -31,7 +31,10 @@
         'todo_view_project_task.xml',
         'todo_view_survey_user_input.xml',
         'security/todo_access_rules.xml',
-        'data/project_task_type.xml'
+        'data/project_task_type.xml',
+        'data/ir_actions_server.xml',
+        'data/base_action_rule.xml'
+        
     ],
     'installable'    :   True,
     'auto_install'  :   True,
