@@ -36,9 +36,9 @@
             </record>
             
             <record model="project.task.type" id="project_task_type_5">
-                <field name="name">Cancelada</field>
+                <field name="name">Finalizada</field>
                 <field name="x_task_type">4</field>
-                <field name="description">En esta etapa la actividad fue cancelada/anulada por el administrador.</field>
+                <field name="description">En esta etapa la actividad fue finalizada/cancelada/anulada por el administrador.</field>
                 <field name="sequence">90</field>
                 <!-- field name="case_default" eval="True"/-->
             </record>
