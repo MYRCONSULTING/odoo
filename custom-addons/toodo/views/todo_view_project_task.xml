@@ -7,7 +7,7 @@
 			    <field name="inherit_id" ref="project.view_task_form2"/>
 			    <field name="arch" type="xml">
 			     	<field name="categ_ids" position="after">
-			            <field name="x_survey_id" string="Encuesta" />
+			            <field name="x_survey_id" string="Actividad" />
 			            <newline/>
 			            <field name="x_survey_user_input_id" string="Respuesta"/>
 			            <field name="x_recursive" string="Recrear tarea despues de finalizar"/>
