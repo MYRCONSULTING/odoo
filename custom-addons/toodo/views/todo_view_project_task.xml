@@ -9,7 +9,7 @@
 			     	<field name="categ_ids" position="after">
 			            <field name="x_survey_id" string="Actividad" />
 			            <newline/>
-			            <field name="x_survey_user_input_id" string="Respuesta"/>
+			            <field name="x_survey_user_input_id" string="Ver actividad"/>
 			            <field name="x_recursive" string="Recrear tarea despues de finalizar"/>
 			        </field>
 			    </field>
