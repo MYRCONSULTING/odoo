@@ -1598,12 +1598,12 @@ msgstr "Resumen"
 #: view:survey.user_input_line:survey.survey_response_line_search
 #: field:survey.user_input_line,survey_id:0
 msgid "Survey"
-msgstr "actividad"
+msgstr "Actividad"
 
 #. module: survey
 #: view:survey.user_input_line:survey.survey_response_line_tree
 msgid "Survey Answer Line"
-msgstr "Líne de respuesta actividad"
+msgstr "Línea de respuesta actividad"
 
 #. module: survey
 #: model:ir.model,name:survey.model_survey_label
