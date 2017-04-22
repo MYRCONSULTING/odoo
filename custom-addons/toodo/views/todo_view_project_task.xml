@@ -24,7 +24,7 @@
 			    <field name="arch" type="xml">
 			     <xpath expr="//page[1]" position="after">
 			        <page string="Ver actividades">
-			            <field name="x_survey_user_input_id" string="Ver actividades" />
+			            <field name="survey_user_input_ids" string="Ver actividades" />
 			        </page>
 			    </xpath>
 			    </field>
