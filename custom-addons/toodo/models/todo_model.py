@@ -20,7 +20,7 @@ class ProjectTask(models.Model):
 class SurveyUserInput(models.Model):
     _inherit = ['survey.user_input']
     x_product_ids = fields.Many2one('product.product')
-    #project_task_ids = fields.Many2many('project.task')
+    project_task_ids = fields.Many2many('project.task')
     
 
 class ProjectTaskType(models.Model):
@@ -32,5 +32,5 @@ class ProjectTaskType(models.Model):
         ('3','RETURNED FROM FIELD'),
         ('4','CANCEL'),
         ('5','OTHER')],
-        'Priority',default='5')
+        'Priority',default='5')    
     

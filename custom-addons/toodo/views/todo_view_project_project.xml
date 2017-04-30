@@ -8,7 +8,7 @@
 			    <field name="arch" type="xml">
 			     	<field name="partner_id" position="after">
 			     		<newline/>
-			            <field name="x_survey_id" string="Formulario" />
+			            <field name="x_survey_id" string="Actividad" />
 			        </field>
 			    </field>
 			</record>
