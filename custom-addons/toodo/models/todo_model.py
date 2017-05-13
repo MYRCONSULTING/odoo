@@ -25,9 +25,9 @@ class SurveyUserInput(models.Model):
 class SurveyUserInputLine(models.Model):
     _inherit = ['survey.user_input_line']
     x_state = fields.Selection([
-        ('SKIP','SKIP'),
-        ('DONE','DONE')],
-        'Priority',default='SKIP')
+        ('skip','skip'),
+        ('done','done')],
+        'Priority',default='skip')
     
 
 class ProjectTaskType(models.Model):
