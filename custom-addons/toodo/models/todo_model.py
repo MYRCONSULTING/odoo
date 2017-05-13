@@ -22,6 +22,13 @@ class SurveyUserInput(models.Model):
     x_product_ids = fields.Many2one('product.product')
     project_task_ids = fields.Many2many('project.task')
     
+class SurveyUserInputLine(models.Model):
+    _inherit = ['survey.user_input_line']
+    x_state = fields.Selection([
+        ('SKIP','SKIP'),
+        ('DONE','DONE')],
+        'Priority',default='SKIP')
+    
 
 class ProjectTaskType(models.Model):
     _inherit = ['project.task.type']
