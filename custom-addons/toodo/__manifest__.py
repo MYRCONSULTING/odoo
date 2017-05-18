@@ -32,8 +32,8 @@
         'views/todo_view_survey_user_input.xml',
         'security/todo_access_rules.xml',
         'data/project_task_type.xml',
-        'data/ir_actions_server.xml',
-        'data/base_action_rule.xml',
+        #'data/ir_actions_server.xml',
+        #'data/base_action_rule.xml',
         'data/ir_ui_menu.xml'
         
     ],

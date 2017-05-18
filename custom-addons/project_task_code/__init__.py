@@ -17,3 +17,17 @@ def create_code_equal_to_id(cr):
                'SET code = id;')
 
 
+def assign_old_sequences(cr, registry):
+    """
+    This post-init-hook will update all existing task assigning them the
+    corresponding sequence code.
+    """
+    env = api.Environment(cr, SUPERUSER_ID, dict())
+    task_obj = env['project.task']
+    sequence_obj = env['ir.sequence']
+    tasks = task_obj.search([], order="id")
+    for task_id in tasks.ids:
+        cr.execute('UPDATE project_task '
+                   'SET code = %s '
+                   'WHERE id = %s;',
+                   (sequence_obj.next_by_code('project.task'), task_id, ))

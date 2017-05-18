@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-from openerp import models, fields, api
+from openerp import api, fields, models, _
 
 class SurveySurvey(models.Model):
     _inherit = ['survey.survey']
