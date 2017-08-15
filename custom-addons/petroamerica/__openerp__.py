@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Petroamerica",
+    'name': "PetroamericaXXXX",
 
     'summary': """
         Este modulo ha sido creado para el proyecto Petroamerica""",
