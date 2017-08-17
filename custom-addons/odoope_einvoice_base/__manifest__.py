@@ -21,6 +21,7 @@
 
 {
     'name' : 'Factura electronica - Base',
+    'icon': '/odoope_einvoice_base/static/description/icon.png',
     'version' : '1.0.1',
     'author' : 'Odoo Peru',
     'category' : 'Accounting & Finance',
