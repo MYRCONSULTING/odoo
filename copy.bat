@@ -1,1 +1,0 @@
-XCOPY "C:\Users\Ricardo Livelli\git\odoo\custom-addons"\*.* "C:\Program Files (x86)\Odoo 10.0\server\odoo\addons" /E/Y

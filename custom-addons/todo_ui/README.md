@@ -1,2 +1,0 @@
-User friendly features. - Megatienda
----------------------
